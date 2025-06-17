@@ -37,27 +37,31 @@ To run the project and see the analysis:
    jupyter notebook
    ```
 
-2. **Navigate to the `final workbook.ipynb` notebook** in the Jupyter interface and run the cells to execute the analysis and generate visualizations.
+2. **Navigate to the `merging data sets and data cleaning and database conversion.ipynb` notebook** in the Jupyter interface and run the cells to execute the analysis and create an sql script that will help in creating the database.
 
 ---
 
 ### Key Features:
 - **SQL Database**: Contains health facility data in a structured format, with several tables for querying.
-- **Jupyter Notebook**: Includes data analysis, visualizations, and queries for examining health facility characteristics.
-- **Tableau Story**: Provides a detailed story about the different insights captured from the data.
-- **Data Base Image**: Visualizes the different relationships between tables.
+- **Jupyter Notebooks**: They include the data cleaning and merging of datasets.
+- **Tableau Workbook**: Provides a detailed analysis of the different insights captured from the data.
+- **Data Base Design Image**: Visualizes the different relationships between tables.
 
 ---
 ## Project Structure
 
 This repository contains the following files:
 
-1. **`final workbook.ipynb`**: Jupyter Notebook file with the data analysis, SQL queries, and visualizations.
-2. **`health_info.sql`**: The SQL file containing the database schema and initial data setup.
-3. **`data_distribution.png`**: Image showing the different relationships between tables.
-4. **`table_story.txt`**: A link containing  the tableau story showing the different insights captured from the data.
-5. **`Health Facilities Analysis.pptx`**: The power point presentation.
-
+1. **datacleaning and database conversion.ipynb**: jupyter notebook containing the data cleaning process and conversion of health facilities data into an SQL script.
+2. **combining datasets.ipynb** jupyter notebook for combining population data and health facilities data.
+3. **database.sql`**: SQL file with the database schema and initial data setup.
+4. **data_distribution.png**:image visualizing relationships between the tables.
+5. **table_story.txt**: link to the tableau story showcasing insights from the data.
+6. **Tableau Workbook**: workbook containing data insights generated from tableau.
+7. **Nairobi_data**: CSV file with data on health facilities in nairobi.
+8. **Population** : CSV with population data for nairobi.
+9. **Facilities_data**: combined CSV file of nairobi health facilities data and population data.
+10. **ehealth-kenya.xls**: excel file with health facilities data for the entire country.
 ---
 
 ## Requirements
@@ -67,6 +71,7 @@ Before running the project, ensure you have the following installed:
 - **Jupyter Notebook** (or any IDE that supports `.ipynb` files)
 - **SQLite/MySQL/PostgreSQL** (depending on the database system you're using)
 - **Pandas**, **Seaborn**, **Matplotlib** (for data visualization)
+- **Tableau** To interact with the tableau workbook containing the data insights
 
 ---
 
@@ -86,7 +91,6 @@ Here is a brief description of the tables in the database:
 To interact with the project, follow these steps:
 
 - **SQL Queries**: Use the SQL queries in the Jupyter Notebook or directly query the database using your SQL tool (MySQL Workbench, SQLite Browser, etc.).
-- **Visualizations**: The Jupyter Notebook includes several plots and graphs that visualize the distribution of data such as bed capacity,ownership and service availability.
 - **Database Insights**: Read the `data base design.png` image to understand the structure and purpose of each table in the database.
 
 ---
